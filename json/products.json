@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Azurite",
+    "description": "Azurite description",
+    "price": 110.50,
+    "images": ["assets/images/1.jpg", "assets/images/2.jpg"],
+    "categories": ["with handle", "with stand", "japanese"]
+  },
+  {
+    "name": "Bloodstone",
+    "description": "Bloodstone description.",
+    "price": 22.90,
+    "images": ["assets/images/3.jpg", "assets/images/4.jpg", "assets/images/5.jpg"],
+    "categories": ["small", "beautiful", "colored", "figured"]
+  },
+  {
+    "name": "Zircon",
+    "description": "Zircon description",
+    "price": 1100,
+    "images": ["assets/images/6.jpg", "assets/images/7.jpg", "assets/images/8.jpg"],
+    "categories": ["fragile", "coffee", "tea", "cocoa"]
+  }
+]

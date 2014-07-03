@@ -1,0 +1,31 @@
+.container {
+	width: 800px;
+}
+
+.tabs-about-product {
+	margin: 10px;
+}
+
+.form-content {
+	border-radius: 5px;
+	background: #eee;
+	padding: 15px;
+	margin: 5px;
+}
+
+.img-wrap {
+	display: inline-block;
+}
+.img-wrap > img {
+	height: 250px;
+	width: 250px;
+}
+
+.small-image > img {
+	height: 100px;
+	width: 100px;
+}
+
+.img-warp-min {
+	display: inline-block;
+}
