@@ -11,12 +11,14 @@
     $http.get('json/categories.json').success(function(data){
       shop.categories = data;
     });
+    this.orderProp = 'age';
   }]);
 
   app.controller('ProductController', function() {
     this.product = {};
 
     this.addProduct = function(shop) {
+      this.product.age = new Date();
       shop.products.push(this.product);
 
       this.product = {};

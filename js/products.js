@@ -69,4 +69,11 @@
       };
     });
 
+    app.directive("productList", function() {
+      return {
+        restrict:"E",
+        templateUrl: "partials/product-list.html"
+      };
+    });
+
   })();

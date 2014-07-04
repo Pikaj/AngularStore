@@ -19,24 +19,42 @@
     <!-- Navbar - Top Panel -->
     <top-panel></top-panel>
 
-    <!--  Products Container  -->
-    <div class="list-group container">
-      <!--  Product Container  -->
-      <div class="row">
+    <div class="container">
+
+      <!--  Products Container  -->
+      <div class="row list-group">
         <div class="col-md-12">
           <product-add-form></product-add-form>
         </div>
-        <div class="list-group-item col-md-12" ng-repeat="product in shop.products">
-          <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
-
-          <!-- Image Gallery  -->
-          <product-gallery></product-gallery>
-
-          <!-- Product Tabs  -->
-          <product-tabs></product-tabs>
+        <div class="col-md-12">
+          <!-- Search and Sort product -->
+          <div class="row form-content">
+            <div class="col-md-6">
+              <div class="search-title">
+                <h4>Search:</h4> 
+              </div>
+              <div class="search-field">
+                <input type="text" class="short-field form-control" ng-model="query">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="search-title">
+                <h4>Sort by:</h4>
+              </div>
+              <div class="search-field">
+                <select ng-model="orderProp" class="form-control">
+                  <option value="name">Alphabetical</option>
+                  <option value="age">Newest</option>
+                  <option value="-age">Oldest</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <product-list></product-list>
         </div>
       </div>
-
     </div>
     
   </body>

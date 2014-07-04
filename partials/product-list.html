@@ -1,0 +1,11 @@
+<div class="list-group-item" ng-repeat="product in shop.products| filter:query | orderBy:orderProp">
+  <div class="product-title">
+    <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+  </div>
+
+  <!-- Image Gallery  -->
+  <product-gallery></product-gallery>
+
+  <!-- Product Tabs  -->
+  <product-tabs></product-tabs>
+</div>
