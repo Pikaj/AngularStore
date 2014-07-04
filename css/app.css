@@ -29,3 +29,42 @@
 .img-warp-min {
 	display: inline-block;
 }
+
+.images-add-container {
+	display: inline-block;
+}
+
+.image-add-field {
+	height: 100px;
+	width: 100px;
+	background: #C0C0C0;
+	padding-bottom: 10px;
+	display: table;
+}
+
+.image-add-field:hover {
+	opacity: 0.5;
+}
+
+.image-add-button {
+	display:table-cell; 
+	text-align: center;
+	vertical-align:middle;
+	font-size: 50px;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.image-add-input {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.category-checkbox {
+	display: inline-block;
+	margin: 5px;
+}
+
+.short-field {
+	height: 35px !important;
+}

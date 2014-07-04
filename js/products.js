@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('shop-directives', []);
+    var app = angular.module('product-directives', []);
 
     app.directive("productAddForm", function() {
       return {
@@ -52,6 +52,13 @@
       return {
         restrict:"A",
         templateUrl: "partials/product-categories.html"
+      };
+    });
+
+    app.directive("productNamePrice", function() {
+      return {
+        restrict:"E",
+        templateUrl: "partials/product-name-price.html"
       };
     });
 
