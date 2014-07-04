@@ -32,4 +32,11 @@
       this.category = {};
     };
   });
+
+  app.directive("topPanel", function() {
+      return {
+        restrict:"E",
+        templateUrl: "partials/top-panel.html"
+      };
+    });
 })();

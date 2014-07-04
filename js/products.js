@@ -55,10 +55,17 @@
       };
     });
 
-    app.directive("productNamePrice", function() {
+    app.directive("productFormNamePrice", function() {
       return {
         restrict:"E",
-        templateUrl: "partials/product-name-price.html"
+        templateUrl: "partials/product-form-name-price.html"
+      };
+    });
+
+    app.directive("productFormImages", function() {
+      return {
+        restrict:"E",
+        templateUrl: "partials/product-form-images.html"
       };
     });
 
