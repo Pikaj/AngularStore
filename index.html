@@ -2,6 +2,7 @@
 <html ng-app="masterShop">
   <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link href="bower_components/angular-xeditable/dist/css/xeditable.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <title>Rails Masters - Master Shop</title>
     <script src="bower_components/angular/angular.js"></script>
@@ -10,6 +11,7 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/checklist-model/checklist-model.js"></script>
+    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
     <script type="text/javascript" src="js/products.js"></script>
     <script type="text/javascript" src="js/categories.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -20,36 +22,12 @@
     <top-panel></top-panel>
 
     <div class="container">
-
       <!--  Products Container  -->
-      <div class="row list-group">
+      <div class="row list-group ">
         <div class="col-md-12">
           <product-add-form></product-add-form>
         </div>
-        <div class="col-md-12">
-          <!-- Search and Sort product -->
-          <div class="row form-content">
-            <div class="col-md-6">
-              <div class="search-title">
-                <h4>Search:</h4> 
-              </div>
-              <div class="search-field">
-                <input type="text" class="short-field form-control" ng-model="query">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="search-title">
-                <h4>Sort by:</h4>
-              </div>
-              <div class="search-field">
-                <select ng-model="orderProp" class="form-control">
-                  <option value="name">Alphabetical</option>
-                  <option value="age">Newest</option>
-                  <option value="-age">Oldest</option>
-                </select>
-              </div>
-            </div>
-          </div>
+        <product-search-sort></product-search-sort>
         </div>
         <div class="col-md-12">
           <product-list></product-list>

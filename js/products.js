@@ -45,7 +45,7 @@
       return {
         restrict: 'E',
         templateUrl: "partials/product-description.html"
-      };s
+      };
     });
 
     app.directive("productCategories", function() {
@@ -73,6 +73,20 @@
       return {
         restrict:"E",
         templateUrl: "partials/product-list.html"
+      };
+    });
+
+    app.directive("productSearchSort", function() {
+      return {
+        restrict:"E",
+        templateUrl: "partials/product-search-sort.html"
+      };
+    });
+
+    app.directive("productOptions", function() {
+      return {
+        restrict:"E",
+        templateUrl: "partials/product-options.html"
       };
     });
 

@@ -2,7 +2,7 @@
   {
     "age": 1,
     "name": "Bloodstone",
-    "description": "Azurite description",
+    "description": "Bloodstone description",
     "price": 110.50,
     "images": ["assets/images/1.jpg", "assets/images/2.jpg"],
     "categories": ["with handle", "with stand", "japanese"]
@@ -10,7 +10,7 @@
   {
     "age": 2,
     "name": "Zircon",
-    "description": "Bloodstone description.",
+    "description": "Zircon description.",
     "price": 22.90,
     "images": ["assets/images/3.jpg", "assets/images/4.jpg", "assets/images/5.jpg"],
     "categories": ["small", "beautiful", "colored", "figured"]
@@ -18,7 +18,7 @@
   {
     "age": 3,
     "name": "Azurite",
-    "description": "Zircon description",
+    "description": "Azurite description",
     "price": 1100,
     "images": ["assets/images/6.jpg", "assets/images/7.jpg", "assets/images/8.jpg"],
     "categories": ["fragile", "coffee", "tea", "cocoa"]
